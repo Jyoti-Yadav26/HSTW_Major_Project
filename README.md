@@ -231,12 +231,12 @@ ToN-IoT Dataset                            ToN-IoT Dataset
      │                                          │
 Data Preprocessing                         Data Preprocessing
      │                                          │
-  SMOTE (before split ⚠️)                  Train-Test Split FIRST
+  SMOTE                                    Train-Test Split FIRST
      │                                          │
 Train-Test Split                           SimpleCTGAN (train only ✅)
      │                                          │
-RF Feature Selection                       SHAP Feature Selection
-     │                                          │
+     |                                     SHAP Feature Selection
+     |                                          │
 DT [max_depth=5]  NN [32,16]               DT [max_depth=7]  NN [64,32,16]+ES
      │                  │                       │                   │
      └──── predict ─────┘                       └── 5-fold OOF ─────┘
