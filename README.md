@@ -254,46 +254,15 @@ DT [max_depth=5]  NN [32,16]               DT [max_depth=7]  NN [64,32,16]+ES
 ## 📁 Repository Structure
 
 ```
-├── final_hstw.ipynb              # Main notebook (Part 1 + Part 2)
-├── stacking_tinyml_part1.tflite  # Quantized TFLite — baseline replication
-├── stacking_tinyml_part2.tflite  # Quantized TFLite — XAI+CTGAN improved
-├── results_part1_original.json   # Part 1 metrics
-├── results_part2_xai.json        # Part 2 metrics
-├── results_comparison.json       # Side-by-side comparison
-├── figures/
-│   ├── shap_summary.png          # Global SHAP feature importance
-│   ├── lime_explanations.png     # LIME local explanations (4 samples)
-│   ├── xai_error_analysis.png    # Misclassification + SHAP error analysis
-│   ├── comparison_results.png    # Overall metric bar chart
-│   ├── per_class_f1_comparison.png
-│   └── part1_training_curve.png
+├── data                          # Contains the dataset
+├── models                        # Contains the quantized models
+├── notebooks                     # Contains the ipynb file comparin the  original vs improved model
+├── results                       # Output graphs, screenshots
+├── README.md                     # Explaing the project and the repository
+├── requirements.txt              # Libraries used
 └── paper/
     └── HSTW_major_project.pdf    # Full research paper
-```
+    └── Base_paper.pdf            # Full base research paper
 
----
 
-## 📖 Citation
 
-If you use this work, please cite both the original paper and this repository:
-
-```bibtex
-@article{sharma2025tinyml,
-  title   = {An optimized stacking-based {TinyML} model for attack detection in {IoT} networks},
-  author  = {Sharma, Anshika and Rani, Shalli and Shabaz, Mohammad},
-  journal = {PLOS ONE},
-  volume  = {20},
-  number  = {8},
-  pages   = {e0329227},
-  year    = {2025},
-  doi     = {10.1371/journal.pone.0329227}
-}
-
-@misc{dhamija2025enhanced,
-  title  = {An Enhanced Stacking-Based {TinyML} Framework for {IoT} Attack Detection with Explainability},
-  author = {Dhamija, Manas and Sumrani, Ronak and Yadav, Jyoti},
-  year   = {2025},
-  school = {Netaji Subhas University of Technology, Delhi},
-  url    = {https://github.com/YOUR_REPO_LINK}
-}
-```
